@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 
 Route::get('/', [PageController::class, 'home']);
+Route::get('/home', [PageController::class, 'home']);
 Route::get('/about', [PageController::class, 'about']);
 Route::get('/contact', [PageController::class, 'contact']);
-Route::get('/articles/{id}', [PageController::class, 'articles']);
+Route::get('/articles', [PageController::class, 'articles']);

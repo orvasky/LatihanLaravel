@@ -16,8 +16,8 @@ class PageController extends Controller
         return view('contact');
     }
 
-    public function articles($id) {
-        return view('articles', compact('id'));
+    public function articles() {
+        return view('articles');
     }
 
 }
